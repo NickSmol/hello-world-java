@@ -1,3 +1,7 @@
-task1*/target/
-task1*/vs.code/
 .vscode
+target
+# Compiled class file
+*.class
+
+# Log file
+*.log
