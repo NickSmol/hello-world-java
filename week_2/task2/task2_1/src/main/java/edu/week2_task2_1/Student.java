@@ -83,9 +83,9 @@ public class Student {
 
     public static void main(String[] args) {
 
-        Student student1 = new Student("Смолев Н.", LocalDate.of(2001, 7, 15), "23ИС1б", 18, 4.0);
-        Student student2 = new Student("Николаев Д.", LocalDate.of(2001, 8, 10), "23ИС1б", 11, 4.5);
-        Student student3 = new Student("Смольянов А.", LocalDate.of(2000, 12, 25), "23ИС1б", 19, 3.6);
+        Student student1 = new Student("Смолев Н.", LocalDate.of(2001, 7, 15), "23ИС1б", 18, 4.9);
+        Student student2 = new Student("Николаев Д.", LocalDate.of(2001, 8, 10), "23ИС1б", 11, 4.8);
+        Student student3 = new Student("Смольянов А.", LocalDate.of(2000, 12, 25), "23ИС1б", 19, 4.0);
 
         System.out.println("Студент №1");
         System.out.println(student1);
