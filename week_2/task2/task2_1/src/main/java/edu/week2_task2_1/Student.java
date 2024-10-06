@@ -61,8 +61,7 @@ public class Student {
 
     // Метод для вычисления возраста студента
     public int getAge() {
-        LocalDate currentDate = LocalDate.now();
-        return Period.between(birthDate, currentDate).getYears();
+        return Period.between(birthDate, LocalDate.now()).getYears();
     }
 
     // Метод для проверки, является ли студент отличником
