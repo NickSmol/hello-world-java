@@ -2,28 +2,28 @@ package edu.week2_task1_1;
 
 public class Game
 {
-    private String gamename;
+    private String gameName;
     private String genre;
     private String price;
     
     //Конструктор по умолчанию
 
     public Game() {
-        this.gamename = "Name";
+        this.gameName = "Name";
         this.genre = "TBD";
         this.price = "Unknown";
     }
 
     //Конструктор с параметрами
-    public Game(String gamename, String genre, String price) {
-        this.gamename = gamename;
+    public Game(String gameName, String genre, String price) {
+        this.gameName = gameName;
         this.genre = genre;
         this.price = price;
     }
 
     //Геттеры
     public String getName() {
-        return gamename;
+        return gameName;
     }
 
     public String getGenre() {
@@ -35,8 +35,8 @@ public class Game
     }
 
     //Сеттеры
-    public void setName(String gamename) {
-        this.gamename = gamename;
+    public void setName(String gameName) {
+        this.gameName = gameName;
     }
 
     public void setGenre(String genre) {
@@ -50,7 +50,7 @@ public class Game
     
     //Метод для вывода на экран
     public void displayInfo() {
-        System.out.println("Название игры: " + gamename);
+        System.out.println("Название игры: " + gameName);
         System.out.println("Жанр: " + genre);
         System.out.println("Цена: " + price);
     }

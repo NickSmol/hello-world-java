@@ -12,5 +12,7 @@ public class Main {
         System.out.println("Внутренний радиус: " + octagon.getInnerRadius());
         System.out.println("Площадь: " + octagon.calculateArea());
         System.out.println("Периметр: " + octagon.calculatePerimeter());
+
+        scanner.close();
     }
 }

@@ -26,5 +26,7 @@ public class Main {
             account.withdraw(ammount);
         }
         System.out.println("Баланс: " + account.getBalance());
+
+        scanner.close();
     }
 }
