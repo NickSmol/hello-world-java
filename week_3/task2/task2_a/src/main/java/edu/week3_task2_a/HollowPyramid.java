@@ -12,7 +12,7 @@ public class HollowPyramid {
 
             // Вывод левой части пирамиды
             for (int k = 1; k <= i; k++) {
-                System.out.print("*");
+                System.out.print("#");
             }
 
             // Печатаем пробелы в середине
@@ -22,7 +22,7 @@ public class HollowPyramid {
 
             // Вывод правой части пирамиды
             for (int k = 1; k <= i; k++) {
-                System.out.print("*");
+                System.out.print("#");
             }
 
             System.out.println();
