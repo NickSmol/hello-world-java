@@ -7,22 +7,16 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Введите число для нахождения квадратного корня: ");
-        double number = scanner.nextDouble();
+        double number = scanner.nextDouble();;
 
-        double tolerance = 1e-6;
-
-        double sqrtHeronValue = HeronMethod.sqrtHeron(number, tolerance);
+        double sqrtHeronValue = HeronMethod.sqrtHeron(number);
 
         double sqrtMathValue = Math.sqrt(number);
 
         System.out.printf("Квадратный корень числа %.5f методом Герона: %.5f\n", number, sqrtHeronValue);
-
-        if (Math.abs(sqrtHeronValue - sqrtMathValue) < tolerance)
-        {
-            System.out.println("Корень числа расчитан верно");
-        }
-        else{
-            System.out.println("Ошибка. Расчёт неверный.");
-        }
+        System.out.println();
+        System.out.println("Проверка на коректность вычислений");
+        System.out.printf("Квадратный корень числа %.5f методом Math: %.5f\n", number, sqrtMathValue);
+        System.out.println("Разница между результатами: " + Math.abs(sqrtHeronValue - sqrtMathValue));
     }
 }
