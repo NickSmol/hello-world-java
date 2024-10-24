@@ -14,12 +14,12 @@ public class SensorDataProcessor {
                 continue;
             }
 
-            String idStr = reading.substring(0, 2);  // ID датчика
-            String temperatureStr = reading.substring(2); // Температура
+            String idStr = reading.substring(0, 2);  
+            String temperatureStr = reading.substring(2);
 
             try {
-                int id = Integer.parseInt(idStr); // Преобразование id в число
-                int temperature = Integer.parseInt(temperatureStr); // Преобразование температуры
+                int id = Integer.parseInt(idStr);
+                int temperature = Integer.parseInt(temperatureStr);
 
                 if (temperature < -50 || temperature > 50) {
                     throw new TemperatureOutOfRangeException("Температура выходит за допустимые пределы: " + temperature);
@@ -36,7 +36,7 @@ public class SensorDataProcessor {
         int validSensors = 0;
         for (int id = 0; id < 100; id++) {
             if (counts[id] > 0) {
-                sensorIds[validSensors] = String.format("%02d", id); // Форматирование id с ведущими нулями
+                sensorIds[validSensors] = String.format("%02d", id);
                 sensorAverages[validSensors] = (double) sums[id] / counts[id]; // Средняя температура
                 validSensors++;
             }
@@ -75,7 +75,6 @@ public class SensorDataProcessor {
         }
     }
 
-    // Исключение для обработки недопустимого значения температуры
     static class TemperatureOutOfRangeException extends Exception {
         public TemperatureOutOfRangeException(String message) {
             super(message);

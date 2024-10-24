@@ -11,7 +11,6 @@ public class FileContentDisplay {
             String line;
             System.out.println("Содержимое файла:");
             
-            // Чтение файла построчно
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);
             }

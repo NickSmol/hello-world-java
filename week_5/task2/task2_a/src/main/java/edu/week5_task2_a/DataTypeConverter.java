@@ -2,7 +2,6 @@ package edu.week5_task2_a;
 
 public class DataTypeConverter {
 
-    // Метод для преобразования строки в указанный тип
     public Object convert(String input, String targetType) throws IllegalArgumentException {
         switch (targetType.toLowerCase()) {
             case "int":

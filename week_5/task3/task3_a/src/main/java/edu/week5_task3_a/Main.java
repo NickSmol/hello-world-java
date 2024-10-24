@@ -7,14 +7,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         SensorDataProcessor dataProcessor = new SensorDataProcessor();
 
-        // Ввод строки показаний
         System.out.print("Введите строку показаний с датчиков (макс. 512 символов): ");
         String input = scanner.nextLine();
-
-        if (input.length() > 512) {
-            System.out.println("Ошибка: строка превышает допустимую длину 512 символов.");
-            return;
-        }
 
         try {
             String[] sensorIds = new String[100];

@@ -7,14 +7,12 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         DataTypeConverter converter = new DataTypeConverter();
 
-        // Ввод данных
         System.out.print("Введите сообщение для преобразования: ");
         String input = scanner.nextLine();
 
         System.out.print("Введите тип, в который хотите преобразовать (int, double, bool, str): ");
         String targetType = scanner.nextLine();
 
-        // Преобразование данных
         try {
             Object result = converter.convert(input, targetType);
             System.out.println("Преобразованное сообщение: " + result);
